@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order - Hopper Mart</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+<h2>Hopper Mart</h2>
+</header>
+
+
+
+<section class="order-box">
+
+
+<h2>আপনার অর্ডার</h2>
+
+
+<div class="order-product">
+
+
+<img id="order-image" src="">
+
+
+<h3 id="order-name">
+Product Name
+</h3>
+
+
+<h3 id="order-price">
+৳0
+</h3>
+
+
+</div>
+
+
+
+<div class="quantity">
+
+
+<button onclick="decrease()">
+-
+</button>
+
+
+<span id="quantity">
+1
+</span>
+
+
+<button onclick="increase()">
++
+</button>
+
+
+</div>
+
+
+
+
+<input 
+type="text"
+id="customer-name"
+placeholder="আপনার নাম"
+>
+
+
+<input 
+type="number"
+id="customer-phone"
+placeholder="মোবাইল নাম্বার"
+>
+
+
+<textarea 
+id="customer-address"
+placeholder="সম্পূর্ণ ঠিকানা">
+</textarea>
+
+
+
+<h3>ডেলিভারি চার্জ</h3>
+
+
+<label>
+
+<input type="radio" 
+name="delivery"
+value="80"
+onclick="updateTotal()"
+checked>
+
+ঢাকার ভিতরে - ৮০ টাকা
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio"
+name="delivery"
+value="120"
+onclick="updateTotal()">
+
+ঢাকার বাইরে - ১২০ টাকা
+
+</label>
+
+
+
+<h2>
+মোট:
+৳<span id="total">
+0
+</span>
+</h2>
+
+
+
+<button class="confirm-btn"
+onclick="confirmOrder()">
+
+অর্ডার কনফার্ম করুন
+
+</button>
+
+
+
+</section>
+
+
+
+
+<script src="js/order.js"></script>
+
+
+</body>
+
+</html>
