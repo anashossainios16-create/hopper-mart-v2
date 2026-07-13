@@ -4,7 +4,7 @@ const product = {
 
     price: "৳ 1300",
 
-    image: "images/product.jpg",
+    image: "images/cooker.jpg",
 
     description:
     "Premium quality cooker. ৬ মাস warranty সহ। সারা বাংলাদেশে ক্যাশ অন ডেলিভারি সুবিধা।"
